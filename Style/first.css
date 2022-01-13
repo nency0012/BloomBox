@@ -1,0 +1,36 @@
+*{
+
+}
+.main{
+    max-width: 1200px;
+}
+
+.logo{
+    max-width: 20%;
+    background-color: aqua;
+    float: left;
+    clear: both;
+    padding: 10px;
+
+}
+
+.navigation{
+    max-width: 55%;
+    background-color: darkseagreen;
+    float: left;
+}
+
+.icons{
+    max-width: 25%;
+    background-color: aqua;
+    float: left;
+
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+}
+
