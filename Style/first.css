@@ -10,53 +10,58 @@
 div{
     display: block;
 }
+
+.background{
+    width: 100%;
+    height: 730px;
+    background-size: cover;
+    background-image: url(../image/Backgroundbanner.png);
+}
 .container{
-    height: 75px;
+    width: 100%;
     filter: drop-shadow(0px 17px 12px rgba(0,0,0,0.06)) drop-shadow(0px 12px 7.5px rgba(0,0,0,0.03));
     background-color: #ffffff;
+}
+.container .main{
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
     padding: 10px;
+
     /* padding-left: 5%; */
 }
-.main{
-    max-width: 1270px;
-    height: 75px;
-    margin: 0 auto;
-}
 
-.wrap{
+.container .wrap{
+    width: 100%;
+    height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.main .logo{
-   max-width: 200px;
-    width: 22%;
+.container .logo{
+    max-width: 200px;
+    width: 100%;
 
 }
-.logo img{
+.container .logo img{
     width: 100%;
 }
 
 .navigation{
     max-width: 700px;
-    width: 56%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
-.main .icons{
-   max-width: 100px;
-   width: 17%;
-   display: flex;
-   justify-content: space-between;
-}
 
-ul{
+
+.navigation ul{
     list-style-type: none;
 }
-li{
+.navigation ul li{
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 34px;
@@ -69,12 +74,22 @@ li{
     float: left;
 
 }
-
-.background{
-    height: 730px;
-    background-image: url(../image/Backgroundbanner.png);
-    background-size: cover;
+.navigation ul li a{
+    text-decoration: none;
+    white-space: nowrap;
+    color:black;
 }
+.nav-icon a{
+    max-width: 50px;
+    /* width: 100%  ; */
+}
+.icons{
+    display: flex;
+    max-width: 101px;
+    width: 100%;
+    justify-content: space-between;
+ }
+
 
 .super{
     height: 87%;
@@ -138,7 +153,7 @@ li{
 .button{
     max-width: 415px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
 }
 .button a{
@@ -181,8 +196,9 @@ li{
 }
 
 .second .images{
-     width: 50%;
-     height: 441px;
+    max-width: 800px;
+    width: 100%;
+    height: 456px;
 }
 
 .images img{
@@ -190,10 +206,9 @@ li{
     height: 100%;
 }
 .second .content{
-    width: 50%; 
-    margin-top: 30px;
+    width: 60%; 
+    padding: 0 30px;
     margin-left: 40px;
-
 }
 .content h1{
     font-size: 18px;
@@ -202,7 +217,8 @@ li{
     color: #333333;
     font-weight: 400;
     font-family: "Poppins";
-    padding-bottom: 10px;
+    padding-top: 40px;
+    margin-bottom: 10px;
 }
 
 .content h2{
@@ -211,4 +227,202 @@ li{
     color: #333333;
     font-weight: 500;
     font-family: "Poppins";
+}
+
+.content p{
+    width: 485px;
+    height: 247px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+ 
+.third{
+    display: flex;
+}
+.left-side{
+    
+    background-image: url(../image/img-2.png);
+    background-color: #333333;
+    background-size: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.part1 {
+    display: flex;
+}
+.part1 ul{
+    flex-direction: column;
+}
+.right-side{
+    width:50%;
+    background-color: #ef1f2e;
+}
+.right-side form{
+    padding: 80px 95px 62px 90px;
+}
+.right-side form input{
+    padding: 14px 15px;
+    max-width: 258px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.right-side form textarea{
+    padding: 14px 15px;
+    max-width: 530px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+form > div{
+    display: flex;
+}
+.right-side form .r1 input:nth-child(1), 
+.right-side form .r2 input:nth-child(1){
+    margin-right: 14px;
+}
+
+form .r3 input{
+    max-width: 533px;
+}
+form .r4 input{
+    max-width: 533px;
+    height:110px;
+}
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.submit-button a{
+    background-color: #ef1f2e;
+    border: 2px solid #ffffff;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 4px;
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.submit-button a:hover{
+    background: #ffffff;
+    color: #ef1f2e;
+    border: 2px solid #ef1f2e
+}
+.left-side .consult {
+    max-width: 520px;
+    width: 100%;
+    margin-top: 100px;
+}
+.left-side .consult p{
+    font-size: 35px;
+    color:#ffffff;
+}
+.left-side .consult .info p{
+    font-size: 16px;
+    color:#ffffff;
+
+}
+.left-side .consult hr{
+    margin-bottom: 30px;
+    width:500px;
+}
+.left-side .consult .signup{
+    font-size: 25px;
+    color:#ffffff;
+    margin-bottom: 10px;
+}
+.left-side .consult .info{
+    font-size: 13px;
+    color:#ffffff;
+    padding: 0 0;
+}
+.footer{
+    padding: 64px;
+    background-color: #ffffff;
+}
+.link{
+    display: flex;
+    justify-content: space-evenly;
+}
+.link .part1{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.link .part1 .menu .sub-menu{
+    font-size: 18px;
+    color:#ef1f2e;
+    margin-bottom: 18px;
+  
+}
+.menu ul li{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: #333333;
+    font-weight: 300;
+    font-family: "Roboto";
+    list-style: none;
+}
+.part2{
+    max-width: 600px;
+    width: 100%;
+}
+.contacts p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contacts p.text{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: "Roboto" ,"sans-serif";
+}
+.Email{
+    display: flex;
+}
+.Email input{
+    padding:12px 15px;
+    width: 344px;
+    margin-right: 15px;
+}
+.Email a{
+    background: #333333;
+    color: #ffffff;
+    height: 47px;
+    border-radius: 5px;
+    display: flex;
+    max-width: 141px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.Email a:hover{
+    color: #333333;
+    background: #ffffff;
+    border: 2px solid #333333;
+}
+.social-part{
+    padding-top: 30px;
+}
+.social-part i{
+    margin-right: 34px;
+    font-size: 18px;
+    cursor: pointer;
 }
